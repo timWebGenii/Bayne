@@ -1,0 +1,96 @@
+.footer{
+    border-top: 1px solid $color-black;
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 20rem;
+
+        @include respond (tab) {
+            padding: 3rem;
+        }
+     
+        
+    }
+
+    &__logo-box{
+        background-color: $color-black;
+    }
+
+    &__heading{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    &__copy{
+        background-color: $color-black;
+        color: $color-white;
+        padding: 1rem 20rem;
+
+    }
+
+    &__logo-box{
+        width: 25rem;
+
+        @include respond (tab) {
+            text-align: center;
+            flex: 0 1 100%;
+            margin-bottom: 3rem;
+        }
+        @include respond (phone-switch) {
+           order: 1;
+         }
+    }
+ 
+    &__nav{
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond (tab) {
+            flex: 0 1 100%;
+            justify-content: space-around;
+        }
+
+        @include respond (phone-switch) {
+            flex-flow: column;
+            padding: 3rem;
+        }
+    }
+    &__list{
+        list-style: none;
+        @include respond (phone-switch) {
+           margin-bottom: 1rem;
+           
+        }
+        }
+
+    
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            text-decoration: none;
+            text-transfor: uppercase;
+            font-size: $default-font-size;
+            transition: all .2s;
+            color: $default-color;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__icon{
+        height:3rem;
+     width: 3rem;
+     fill: $color-primary;
+    }
+
+   
+}
+
+
+

@@ -1,0 +1,38 @@
+.header {
+    text-align: left;
+    position: relative;
+
+    @include respond (tab) {
+        margin-bottom: 42rem;
+    }
+    @include respond (phone-switch) {
+        margin-bottom: 15rem;
+    }
+    &__text-box{
+        position: absolute;
+        bottom: 12rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20rem;
+        & .btn{
+            align-self: flex-end;
+            margin-right: 12rem;
+        }
+    }
+   &__tagline{
+       background-color: $color-dark-grey;
+       padding: 1rem 3rem;
+        width: 55rem;
+        height: 11rem;
+        clip-path: polygon(0 0, 100% 0, 42rem 100%, 0 100%);
+
+       & .heading-primary--main{
+           border-bottom: 1px solid $color-light-grey;
+           display: inline;
+       }
+   }
+
+   
+ 
+ }

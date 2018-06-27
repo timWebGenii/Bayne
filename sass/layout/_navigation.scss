@@ -1,0 +1,77 @@
+.navigation{
+   
+    &__nav{
+        display: flex;
+        padding: 0 2rem;
+        @include respond (tab) {
+            align-items: center;
+         }
+    }
+    &__logo-box{
+        background-color: $color-black;
+        @include respond (tab){
+
+            width: 25rem;
+        }
+    }
+    &__right{
+        margin-left: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: flex-end;
+       
+    }
+    
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+   &__number{
+       padding-top: 1rem;
+   }
+    &__link,
+    &__number{
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $default-color;
+            transition: all .2s;
+            font-size: 1.6rem;
+            font-weight: 500;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+
+        @include respond (tab) {
+            display: none;
+        }
+
+
+    }
+
+    &__menu{
+        &--button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        &--icon{
+            height: 3rem;
+            width: 3rem;
+            transition: all .2s;
+            &:hover{
+                fill: $color-primary;
+            }
+        }
+    }
+
+
+}
