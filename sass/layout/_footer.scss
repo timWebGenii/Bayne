@@ -15,7 +15,6 @@
     }
 
     &__logo-box{
-        background-color: $color-black;
     }
 
     &__heading{
@@ -89,7 +88,20 @@
      fill: $color-primary;
     }
 
-   
+   &__top-page{
+
+       position: fixed;
+       font-size: 2.5rem;
+       font-weight: bold;
+       bottom: 15rem;
+       right: 0;
+       color: $color-white;
+       background-color: rgba($color-black, 0.2);
+       padding: 1.5rem;
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 10px;
+
+   }
 }
 
 

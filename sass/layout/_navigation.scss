@@ -2,13 +2,12 @@
    
     &__nav{
         display: flex;
-        padding: 0 2rem;
+        padding: 5px;
         @include respond (tab) {
             align-items: center;
          }
     }
     &__logo-box{
-        background-color: $color-black;
         @include respond (tab){
 
             width: 25rem;

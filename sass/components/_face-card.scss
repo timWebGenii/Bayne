@@ -1,0 +1,79 @@
+.face-card{
+    // flex: 0 1 30%;
+    width: 500px;
+
+    height: 500px;
+    position: relative;
+    margin-bottom: 10rem;
+    cursor: pointer;
+    transition: all .3s;
+    backface-visibility: hidden;
+
+    &:hover{
+        transform: translateY(-5%);
+        box-shadow: 0 3px 3rem $color-black;
+
+    }
+    &-img{
+        box-shadow: $box-shadow;
+    transition: all .3s;
+
+       
+    }
+   
+
+    &__tagline{
+        background-color: $color-dark-grey;
+        // padding-left: 3rem;
+        //  width: 35rem;
+        //  height: 7rem;
+        padding: 1rem 6rem 1rem 1rem;
+         clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+        position: absolute;
+        bottom: 3rem;
+        z-index: 20;
+
+        & .heading-secondary{
+            display: inline;
+            border-bottom: 1px solid $color-light-grey;
+            color: $color-light-grey;
+            font-size: 3rem;
+            font-weight: 300;
+        }
+      
+    }
+  
+
+    &__cta{
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+        & .face-card{
+            background-color: $color-white;
+        box-shadow: $box-shadow;
+            margin-bottom: 0;
+            position: relative;
+            &__question{
+               @include absCenter;
+                font-size: 25rem;
+                top: 40%;
+            }
+        }
+    }
+            &__join{
+                background-color: $color-white;
+                padding: 3rem;
+                box-shadow: 0 3px 7px rgba($color-black, 0.3);
+            
+                flex: 0 1 65%;
+                display: flex;
+                align-items: center;
+                flex-flow: wrap;
+                & .heading-primary--main{
+                    color: $default-color;
+                    font-weight: bold;
+                }
+            }
+ 
+}

@@ -1,7 +1,7 @@
 .section-cta{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 15rem 15rem 15rem;
+    margin: 5rem 10rem 15rem 10rem;
     background-color: $color-white;
     padding: 5rem;
     @include respond (tab-port) {
@@ -30,8 +30,26 @@
             margin-bottom: 1rem;
         }
     }
+
+    &__mapouter{
+        margin-top: 10rem;
+        text-align:right;
+        height:540px;
+        width:720px;
+        & .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:540px;
+            width:720px;
+        }
+    }
+    
     &__container--form{
-        flex: 0 1 50%;
+        flex: 0 1 45%;
+
+        & .heading-secondary{
+            margin-top: 14rem;
+        }
     }
 }
 //////////////////////////////////////////////////////
@@ -50,13 +68,18 @@
     }
     &__item{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         &:not(:last-child){
             margin-bottom: 1rem;
         }
 
         
+    }
+    &__title{
+        font-size: $default-font-size;
+        font-weight: bold;
+        margin-right: 1rem;
     }
     &__link{
         &:link,
@@ -75,6 +98,12 @@
 ////// CTA FORM
 .form{
     margin-top: 1rem;
+    &__row{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__group{
         display: flex;
         &:not(:last-child){

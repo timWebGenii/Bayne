@@ -1,44 +1,9 @@
 .section-why-us{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20rem;
-    position: relative;
-
-    .paragraph{
-        padding-left: 5rem;
-    }
-    .why-us__left,
-    .why-us__img-box{
-        flex: 0 1 35%;
-    }
-
-    .why-us__img-box{
-        position: absolute;
-        width: 70rem;
-        right: 1rem;
-    }
+  
 }
 
 .section-general-contracting{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20rem;
-    height: 33rem;
-
-    .paragraph{
-        padding-left: 5rem;
-    }
-    & .why-us__right{
-        flex: 0 1 45%;
-        
-    }
-
-
-    & .why-us__img-box{
-        width: 70rem;
-    }
+   
 }
 
 .section-carousel{

@@ -1,0 +1,12 @@
+.section-portfolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 7rem;
+
+    & .heading-secondary{
+        border: none;
+        font-size: 2.5rem;
+    }
+}

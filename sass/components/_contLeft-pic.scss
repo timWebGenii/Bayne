@@ -1,0 +1,22 @@
+.contLeft-pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: auto 15rem auto 15rem;
+
+    & .paragraph{
+        padding-left: 5rem;
+    }
+
+    &__left,
+    &__img-box{
+        flex: 0 1 45%;
+    }
+
+    &__img-box{
+        position: absolute;
+        width: 70rem;
+        right: 1rem;
+    }
+}

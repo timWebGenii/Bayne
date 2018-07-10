@@ -5,12 +5,19 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/button';
+@import 'components/contLeft-pic';
+@import 'components/face-card';
+@import 'components/pic-contRight';
 
+@import 'layout/button';
 @import 'layout/cta-form';
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
+@import 'pages/contact';
+@import 'pages/gen-con';
 @import 'pages/index';
+@import 'pages/portfolio';
+@import 'pages/team';
