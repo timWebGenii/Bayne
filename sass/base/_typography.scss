@@ -44,7 +44,7 @@ body {
 .paragraph{
     font-size: $default-font-size;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 2.5rem;
     
     &:not(:last-child) {
           margin-bottom: 3rem;

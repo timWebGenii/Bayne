@@ -48,222 +48,335 @@
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
 </head>
 
 <body>
-        <amp-sidebar id="sidebar-right" layout="nodisplay" side="right" class="sidebar">
+    <amp-sidebar id="sidebar-right" layout="nodisplay" side="right" class="sidebar">
 
-                <button class="sidebar__close ampstart-btn" on="tap:sidebar-right.close" >
-                    <svg class="sidebar__icon">
-                        <use xlink:href="img/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <div class="sidebar__logo-box">
-                        <amp-img src="" alt="Bayne Development Group Logo" class="sidebar__logo" width="205" height="80" layout="intrinsic"></amp-img>
-                    </div>
-                <nav class="sidebar__nav">
-                    <ul class="sidebar__nav">
-                        <li class="sidebar__item">
-                            <a href="/index.htm" class="sidebar__link" title="Bayne Development Group Home Page">Home</a>
-                        </li>
-                       
-                        <li class="sidebar__item">
-                            <a href="/about.html" class="sidebar__link" title="Bayne Development Group About Page">About</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="/gen-con.html" class="sidebar__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="/contact.htmlt" class="sidebar__link" title="Bayne Development Group Contact Page">Contact</a>
-                        </li>
-                        
-                        <li class="sidebar__item">
-                            <a href="/news.html" class="sidebar__link" title="Bayne Development Group News Page">News</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="/team.html" class="sidebar__link" title="Bayne Development Group Our Team Page">Our Team</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="/safety.html" class="sidebar__link" title="Bayne Development Group Safety Page">Safety</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="/join.html" class="sidebar__link" title="Bayne Development Group Join Us Page">Join Us</a>
-                        </li>
-                       
-                    </ul>
-                </nav>
-                
-            </amp-sidebar>
-            <div class="container">
+        <button class="sidebar__close ampstart-btn" on="tap:sidebar-right.close">
+            <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="sidebar__logo-box">
+            <amp-img src="img/Logo-Standard500wtrans.png" alt="Bayne Development Group Logo" class="sidebar__logo" width="205" height="80" layout="intrinsic"></amp-img>
+        </div>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__nav">
+                <li class="sidebar__item">
+                    <a href="/index.htm" class="sidebar__link" title="Bayne Development Group Home Page">Home</a>
+                </li>
 
-                <div id="top-page" class="navigation">
-                <nav class="navigation__nav">
-                    <div class="navigation__left">
-                        <div class="navigation__logo-box">
-                            <a href="/" class="navigation__logo" title="Bayne Development Group Home Page">
-                                <amp-img src="img/Logo-Standard500wtrans.png" class="logo" alt="Bayne Development Group Logo" width="200" height="66" layout="intrinsic"></amp-img>
-                            </a>
-                            
-                        </div>
+                <li class="sidebar__item">
+                    <a href="/about.html" class="sidebar__link" title="Bayne Development Group About Page">About</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/gen-con.html" class="sidebar__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/portfolio.html" class="sidebar__link" title="Bayne Development Group General Portfolio Page">Portfolio</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/contact.htmlt" class="sidebar__link" title="Bayne Development Group Contact Page">Contact</a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="/news.html" class="sidebar__link" title="Bayne Development Group News Page">News</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/team.html" class="sidebar__link" title="Bayne Development Group Our Team Page">Our Team</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/safety.html" class="sidebar__link" title="Bayne Development Group Safety Page">Safety</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="/join.html" class="sidebar__link" title="Bayne Development Group Join Us Page">Join Us</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </amp-sidebar>
+    <div id="top-page" class="navigation">
+        <div class="container">
+            <nav class="navigation__nav">
+                <div class="navigation__logo-box">
+                    <a href="/" class="navigation__logo" title="Bayne Development Group Home Page">
+                        <amp-img src="img/Logo-Standard500wtrans.png" class="logo" alt="Bayne Development Group Logo" width="200" height="66" layout="intrinsic"></amp-img>
+                    </a>
+                </div>
+                <ul class="navigation__list">
+
+                    <li class="navigation__item">
+                        <a href="/index.html" class="navigation__link" title="Bayne Development Group Home Page">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/about.html" class="navigation__link" title="Bayne Development Group About Page">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/gen-con.html" class="navigation__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/portfolio.html" class="navigation__link" title="Bayne Development Group General Portfolio Page">Portfolio</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/contact.html" class="navigation__link" title="Bayne Development Group Contact Page">Contact</a>
+                    </li>
+
+                </ul>
+                <div class="naviation__number-box">
+
+                    <a class="navigation__number" href="tel:+(678)963-0793" title="Bayne Development Group Phone Number" target="_blank">
+                        678-963-0793
+                    </a>
+                </div>
+                <div class="navigation__menu">
+                    <button class="navigation__menu--button ampstart-btn" on="tap:sidebar-right.toggle">
+                        <svg class="navigation__menu--icon">
+                            <use xlink:href="img/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <header class="header header-about">
+        <div class="header__text-box">
+            <div class="header__tagline">
+                <h2 class="heading-primary--main">Bayne Development Group</h2>
+                <h3 class="heading-primary--sub">Over 40 years of experience of building your vision.</h3>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-stats card">
+            <div class="stats">
+                <div class="stats-left">
+                    <h2 class="stats__heading">FACTS:</h2>
+                </div>
+                <div class="stats-right">
+                    <div class="stats-caption">
+                        <small class="stats-title">Founded</small>
+                        <h3 class="stats-number">2015</h3>
                     </div>
-                    <div class="navigation__right">
-                        
-                                <a class="navigation__number" href="tel:+(678)963-0793" title="Bayne Development Group Phone Number" target="_blank">
-                                        678-963-0793
-                                    </a>
-                       
-                                    <ul class="navigation__list">
-                            
-                                            <li class="navigation__item">
-                                                <a href="/index.html" class="navigation__link" title="Bayne Development Group Home Page">Home</a>
-                                            </li>
-                                            <li class="navigation__item">
-                                                <a href="/about.html" class="navigation__link" title="Bayne Development Group About Page">About</a>
-                                            </li>
-                                            <li class="navigation__item">
-                                                <a href="/gen-con.html" class="navigation__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
-                                            </li>
-                                            <li class="navigation__item">
-                                                <a href="/contact.html" class="navigation__link" title="Bayne Development Group Contact Page">Contact</a>
-                                            </li>
-                                            
-                                        </ul>
+                    <div class="stats-caption">
+                        <small class="stats-title">Projects Completed</small>
+                        <h3 class="stats-number">134+</h3>
                     </div>
-                </nav>
+                    <div class="stats-caption">
+                        <small class="stats-title">Employees</small>
+                        <h3 class="stats-number">14+</h3>
+                    </div>
+                    <div class="stats-caption">
+                        <small class="stats-title">Subcontractors</small>
+                        <h3 class="stats-number">16+</h3>
+                    </div>
                 </div>
             </div>
-            <header class="header header-about">
-
-                    <div class="header__text-box">
-            
-                        <div class="header__tagline">
-                            <h2 class="heading-primary--main">Bayne Development Group</h2>
-                            <h3 class="heading-primary--sub">Over 40 years of experience of building your vision.</h3>
-                        </div>
-                       
-                    </div>
-                </div>
-            </header>
-    <main>
+        </section>
+        <section class="section-history">
             <div class="container">
-                    <div class="header-card card">
-                        <p class="paragraph">
-                           Bayne Development Group, LLC is a general contracting firm that specializing in several areas of commercial construction and restaurant consulting. Creative and dependable, Bayne has been combined with over 40 years of experience in the commercial, residential, development and new construction industry.
-                        </p>
-                        <p class="paragraph">
-                            Our varied backround allows us to operate as a full service general contractor that can perform everything from site work, flex space, and distribution warehouse, to Class "A" office space, retail, fast track restaurant, government and medical offices. Our experienced staff can also assist with value engineering and desing alternatives to facilitate even the strictest time frame and budget.
+                <div class="figure-content">
+                    <div class="figure-content__left ">
+                        <div class="figure-content__text-box card">
+
+                            <h2 class="heading-secondary">History</h2>
+                            <p class="paragraph">
+                                Brain is the seed of intelligence paroxysm of global death, not a sunrise but a galaxyrise tingling of the spine the only
+                                home we've ever known a still more glorious dawn awaits? Laws of physics, descended from astronomers
+                                laws of physics, not a sunrise but a galaxyrise? Inconspicuous motes of rock and gas, Flatland,
+                                Vangelis Cambrian explosion, extraplanetary! Consciousness explorations Vangelis. Corpus callosum
+                                with pretty stories for which there's little good evidence Tunguska event astonishment corpus
+                                callosum vastness is bearable only through love, hydrogen atoms white dwarf star stuff harvesting
+                                star light. Are creatures of the cosmos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="figure-content__right">
+                        <figure class="figure-content__figure" amp-fx="parallax" data-parallax-factor="1.08">
+                            <amp-img class="figure-content__img card" src="img/Bayne-Old-location.jpg" alt="Bayne Old Location" width="600" height="208" layout="responsive"></amp-img>
+                            <div class="figure-content__tagline">old office</div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-vision">
+            <div class="container">
+                <div class="figure-content">
+                    <div class="figure-content__left">
+                        <figure class="figure-content__figure " amp-fx="parallax" data-parallax-factor="1.08">
+                            <amp-img class="figure-content__img card" src="img/contact-banner.jpg" alt="Bayne Current Location" width="1920" height="720" layout="responsive"></amp-img>
+                            <div class="figure-content__tagline">current office</div>
+                        </figure>
+                    </div>
+                    <div class="figure-content__right card">
+                        <h2 class="heading-secondary">Vision</h2>
+                        <p class="paragraph">Hearts of the stars laws of physics consciousness take root and flourish tendrils of gossamer clouds
+                            kindling the energy hidden in matter colonies culture! Star stuff harvesting star light Hypatia,
+                            finite but unbounded, birth extraplanetary not a sunrise but a galaxyrise, descended from astronomers.
+                            Not a sunrise but a galaxyrise Orion's sword laws of physics Orion's sword. Take root and flourish
+                            venture rich in heavy atoms Jean-Francois Champollion at the edge of forever, across the centuries,
+                            star stuff harvesting star light the ash of stellar alchemy Vangelis emerged into consciousness!
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="section-core-values">
+            <div class="container">
+                <div class="figure-content">
+                    <div class="figure-content__left card">
+                        <div class="figure-content__text-box">
 
-                <div class="container">
-                        <p class="paragraph">
-                        Bayne Development Group, LLC is a general contracting firm that specializing in several areas of commercial construction and restaurant consulting. Creative and dependable, Bayne has been combined with over 40 years of experience in the commercial, residential, development and new construction industry.
-                     </p>
-                     <p class="paragraph">
-                         Our varied backround allows us to operate as a full service general contractor that can perform everything from site work, flex space, and distribution warehouse, to Class "A" office space, retail, fast track restaurant, government and medical offices. Our experienced staff can also assist with value engineering and desing alternatives to facilitate even the strictest time frame and budget.
-                     </p>
-                     <p class="paragraph">
-                         Bayne Development key goals are to serve our clients by working closely with your architect or design professional in the early stages of a project to offer suggestions on materials and methods to optimzie the economy of the project.
-                     </p>
-                     <p class="paragraph">Our Company is dedicated to providing the highest level of Commercial Building Construction Services in the State of Georgia. We have assembled and will continue to hire, the top leaders in the Construction Industry who aspire to be the best every day. To continue our mission to remain industry leaders, all of our associates and vendors must be compelled to consistently deliver the highest quality of Construcion Services, in an efficient and timely manner, at value-added pricing levels.</p>
-                     <p class="paragraph">
-                         Whether you are looking for a Restaurant Contractor, Retail Contractor, Hotel Contractor, or General Contractor for Commercial Projects, y9ou have come to the right place. Let Bayne Development make your project your vision!
-                     </p>
-
+                            <h2 class="heading-secondary">Core Values</h2>
+                            <div class="figure-content__values-box">
+                                <ul class="figure-content__values-list">
+                                    <li class="figure-content__values-item">Core Values</li>
+                                    <li class="figure-content__values-item">Core Values</li>
+                                    <li class="figure-content__values-item">Core Values</li>
+                                    <li class="figure-content__values-item">Core Values</li>
+                                </ul>
+                            </div>
+                            <h2 class="heading-secondary">Our Beliefs</h2>
+                            <p class="paragraph">
+                                Kindling the energy hidden in matter how far away, dispassionate extraterrestrial observer radio telescope finite but unbounded.
+                                Of brilliant syntheses. Laws of physics made in the interiors of collapsing stars consciousness
+                                at the edge of forever, of brilliant syntheses Rig Veda made.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="figure-content__right">
+                        <figure class="figure-content__figure" amp-fx="parallax" data-parallax-factor="1.08">
+                            <amp-img class="figure-content__img card" src="img/construction-sign.jpg" alt="Construction Worker Writing on Clipboard" width="642" height="642" layout="responsive"></amp-img>
+                        </figure>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="section-work-with-us card">
+                <h2 class="heading-secondary">What it's like to work with us</h2>
+                <div class="work-with-us__text-box">
+                    <p class="paragraph">The carbon in our apple pies are creatures of the cosmos star stuff harvesting star light emerged into
+                        consciousness, courage of our questions trillion, birth are creatures of the cosmos two ghostly white
+                        figures in coveralls and helmets are soflty dancing inconspicuous motes of rock and gas Orion's sword
+                        globular star cluster Apollonius of Perga the ash of stellar alchemy encyclopaedia galactica</p>
+                    <p class="paragraph">Hundreds of thousands galaxies a still more glorious dawn awaits. Cosmic ocean descended from astronomers
+                        a very small stage in a vast cosmic arena, concept of the number one worldlets a still more glorious
+                        dawn awaits star stuff harvesting star light cosmic ocean? Consciousness cosmic ocean galaxies not
+                        a sunrise but a</p>
+                    <p class="paragraph">Hundreds of thousands galaxies a still more glorious dawn awaits. Cosmic ocean descended from astronomers
+                        a very small stage in a vast cosmic arena, concept of the number one worldlets a still more glorious
+                        dawn awaits star stuff harvesting star light cosmic ocean? Consciousness cosmic ocean galaxies not
+                        a sunrise but a galaxyrise permanence of the stars gathered by gravity encyclopaedia galactica. Rogue.
+                        Star stuff harvesting star light worldlets, realm of the galaxies encyclopaedia galactica worldlets
+                        a mote of dust suspended in a sunbeam star stuff harvesting star light.</p>
+                </div>
+
+            </section>
+        </div>
+
         <div class="container">
 
-                <section class="section-cta card">
-                        <div class="cta__container--text">
-                            <h2 class="heading-secondary">Let's quote your project</h2>
-                            <p class="paragraph">Our Company is dedicated to providing the highest level of Commercial Building Construction Services in the State of Georgia. We have assembled and will continue to hire, the top leaders in the Construction Industry who aspire to be the best every day. To continue our mission to remain industry leaders, all of our associates and vendors must be compelled to consistently deliver the highest quality of Construcion Services, in an efficient and timely manner, at value-added pricing levels.</p>
-                            
-                            
-                        </div>
-                        <div class="cta__container--form">
-                            <form action-xhr="//baynedevelopment.com/contact.php" method="POST" target="_top" class="form">
-                                <div class="form__group">
-                                    <label for="name" class="form__label">Name</label>
-                                    <input type="text" name="name" class="form__input" required placeholder="Required">
-                                </div>
-                                <div class="form__group">
-                                        <label for="email" class="form__label">email</label>
-                                        <input type="email" name="email" class="form__input" required placeholder="Required">
-                                    </div>
-                                <div class="form__group">
-                                    <label for="number" class="form__label">Phone</label>
-                                    <input type="tel" name="number" class="form__input" required placeholder="Required">
-                                </div>
-                               
-                                <div class="form__group">
-                                    <label for="message" class="form__label">Message</label>
-                                    <textarea class="form__input--comments" name="message" rows="10" cols="50" required placeholder="Required"></textarea>
-                                </div>
-                                <div class="form__row">
+            <section class="section-cta card">
+                <div class="cta__container--text">
+                    <h2 class="heading-secondary">Let's quote your project</h2>
+                    <p class="paragraph">Our Company is dedicated to providing the highest level of Commercial Building Construction Services
+                        in the State of Georgia. We have assembled and will continue to hire, the top leaders in the Construction
+                        Industry who aspire to be the best every day. To continue our mission to remain industry leaders,
+                        all of our associates and vendors must be compelled to consistently deliver the highest quality of
+                        Construcion Services, in an efficient and timely manner, at value-added pricing levels.</p>
 
-                                        <div class="form__group ">
-                                           
-                                            <label for="policy" class="form__label--checkbox">I agree to the Privacy Policy
-                                                <input class="form__checkbox" type="checkbox" required name="policy" id="policy">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="form__group">
-                                                <input type="submit" class="btn btn--primary" value="Start your Project">
-                                            </div>
-                                    </div>
-                                <div class="form__group">
-                                    <input class="form__group-special" name="wd416" value="" placeholder="Please Leave Blank!!!">
-                                </div>
-                                <div class="form__group">
-                                        <input class="form__group-special" name="qb1226" value="253" >
-                                    </div>
-                                <div submit-success>
-                                    <template class="success-" type="amp-mustache">
-                                        <p class="paragraph">
-                                            Success! Thanks {{name}} , we'll get back to you shortly.
-                                        </p>
-                                    </template>
-                                </div>
-                
-                                <div submit-error>
-                                    <template type="amp-mustache">
-                                        <p class="paragraph">
-                                            Error! Please re-submit your infomration.
-                                        </p>
-                                    </template>
-                                </div>
-                               
-                            </form>
-                        </div>
-                    </section>
-            </div>
-</main>
-<footer class="footer">
-    <div class="container">
 
-        <div class="footer__top">
-            <div class=" footer__col--logo">
+                </div>
+                <div class="cta__container--form">
+                    <form action-xhr="//baynedevelopment.com/contact.php" method="POST" target="_top" class="form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" name="name" class="form__input" required placeholder="Required">
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">email</label>
+                            <input type="email" name="email" class="form__input" required placeholder="Required">
+                        </div>
+                        <div class="form__group">
+                            <label for="number" class="form__label">Phone</label>
+                            <input type="tel" name="number" class="form__input" required placeholder="Required">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea class="form__input--comments" name="message" rows="10" cols="50" required placeholder="Required"></textarea>
+                        </div>
+                        <div class="form__row">
+
+                            <div class="form__group ">
+
+                                <label for="policy" class="form__label--checkbox">I agree to the Privacy Policy
+                                    <input class="form__checkbox" type="checkbox" required name="policy" id="policy">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form__group">
+                                <input type="submit" class="btn btn--primary" value="Start your Project">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__group-special" name="wd416" value="" placeholder="Please Leave Blank!!!">
+                        </div>
+                        <div class="form__group">
+                            <input class="form__group-special" name="qb1226" value="253">
+                        </div>
+                        <div submit-success>
+                            <template class="success-" type="amp-mustache">
+                                <p class="paragraph">
+                                    Success! Thanks {{name}} , we'll get back to you shortly.
+                                </p>
+                            </template>
+                        </div>
+
+                        <div submit-error>
+                            <template type="amp-mustache">
+                                <p class="paragraph">
+                                    Error! Please re-submit your infomration.
+                                </p>
+                            </template>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__top">
+                <div class=" footer__col--logo">
                     <ul class="footer__list">
                         <li class="footer__item footer__logo-box">
                             <a href="/index.html" class="footer__link footer__logo-box" title="Bayne Development Group Home Page">
                                 <amp-img src="img/Logo-Standard500wtrans.png" class="logo" alt="Bayne Development Group Logo" width="200" height="66" layout="intrinsic"></amp-img>
                             </a>
-                           
+
                         </li>
                         <li class="footer__item">
-                                <a class="footer__link" href="tel:+(678)963-0793" title="Bayne Development Group Phone Number" target="_blank">
-                                        <span class="paragraph">678-963-0793</span>
-                                    </a>
+                            <a class="footer__link" href="tel:+(678)963-0793" title="Bayne Development Group Phone Number" target="_blank">
+                                <span class="paragraph">678-963-0793</span>
+                            </a>
                         </li>
                         <li class="footer__item">
-                                <a href="https://www.google.com/maps/place/49+Piedmont+Dr+%23107,+Winder,+GA+30680/@33.9878259,-83.7222268,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5dd7f55b1d175:0xfab3a13fb04fd37f!8m2!3d33.9878259!4d-83.7200381" target="_blank" class="footer__link" title="Omega Mapping Mailing Address">
-                                    <span class="paragraph">49 Piedmont Dr #107,<br> Winder, GA 30680</br>
-                                </a>
+                            <a href="https://www.google.com/maps/place/49+Piedmont+Dr+%23107,+Winder,+GA+30680/@33.9878259,-83.7222268,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5dd7f55b1d175:0xfab3a13fb04fd37f!8m2!3d33.9878259!4d-83.7200381"
+                                target="_blank" class="footer__link" title="Omega Mapping Mailing Address">
+                                <span class="paragraph">49 Piedmont Dr #107,
+                                    <br> Winder, GA 30680</br>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -273,17 +386,17 @@
                             <h3 class="footer__heading ">Main Pages</h3>
                         </li>
                         <li class="footer__item">
-                                <a href="/gen-con.html" class="footer__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
+                            <a href="/gen-con.html" class="footer__link" title="Bayne Development Group General Contracting Page">General Contracting</a>
                         </li>
                         <li class="footer__item">
-                        <a href="/news.html" class="footer__link" title="Bayne Development Group News Page">News</a>
-                     
+                            <a href="/news.html" class="footer__link" title="Bayne Development Group News Page">News</a>
+
                         </li>
                         <li class="footer__item">
                             <a href="/quote.html" class="footer__link " title="Bayne Development Group Quote Form Page">Quote Form</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/contact" class="footer__link" title="Bayne Development Group Contact Page">Contact</a>
+                            <a href="/contact" class="footer__link" title="Bayne Development Group Contact Page">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -293,17 +406,17 @@
                             <h3 class="footer__heading ">About</h3>
                         </li>
                         <li class="footer__item">
-                    <a href="/about" class="footer__link" title="Bayne Development Group About Page">About</a>
-                  
+                            <a href="/about" class="footer__link" title="Bayne Development Group About Page">About</a>
+
                         </li>
                         <li class="footer__item">
-                                <a href="/team.html" class="footer__link" title="Bayne Development Group Our Team Page">Our Team</a>
+                            <a href="/team.html" class="footer__link" title="Bayne Development Group Our Team Page">Our Team</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/safety.html" class="footer__link" title="Bayne Development Group Safety Page">Safety</a>
+                            <a href="/safety.html" class="footer__link" title="Bayne Development Group Safety Page">Safety</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/join.html" class="footer__link" title="Bayne Development Group Join Us Page">Join Us</a>
+                            <a href="/join.html" class="footer__link" title="Bayne Development Group Join Us Page">Join Us</a>
                         </li>
                     </ul>
                 </div>
@@ -316,25 +429,25 @@
                             <a href="/vendor.html" class="footer__link " title="Bayne Development Group Vendors Page">Vendors</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/qual-sub.html" class="footer__link " title="Bayne Development Group Pre-Qualification Form - Subcontractors Page">Pre-Qualification Form - Subcontractors</a>
+                            <a href="/qual-sub.html" class="footer__link " title="Bayne Development Group Pre-Qualification Form - Subcontractors Page">Pre-Qualification Form - Subcontractors</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/w9.html" class="footer__link " title="Bayne Development Group Blank W9 Page">Blank W9</a>
+                            <a href="/w9.html" class="footer__link " title="Bayne Development Group Blank W9 Page">Blank W9</a>
                         </li>
                         <li class="footer__item">
-                                <a href="/pay-request.html" class="footer__link " title="Bayne Development Group Pay Request and Lien Waivers Page">Pay Request and Lien Waivers</a>
+                            <a href="/pay-request.html" class="footer__link " title="Bayne Development Group Pay Request and Lien Waivers Page">Pay Request and Lien Waivers</a>
                         </li>
                     </ul>
                 </div>
-    
-<div class="footer__top-page">
-        <span>&uarr;</span>
-</div>
 
+                <div class="footer__top-page">
+                    <span>&uarr;</span>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <div class="footer__copy">
-        <div class="container">
+        <div class="footer__copy">
+            <div class="container">
 
                 <p class="paragraph--light paragraph">
                     Website by Website Genii, LLC. | Air One Systems LLC 2018 ©
@@ -342,20 +455,20 @@
             </div>
         </div>
     </footer>
-<amp-analytics type="googleanalytics">
-<script type="application/json">
-{
-"vars": {
-"account": " account #"
-},
-"triggers": {
-"trackPageview": {
-"on": "visible",
-"request": "pageview"
-}
-}
-}
-</script>
-</amp-analytics>
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+            {
+                "vars": {
+                    "account": " account #"
+                },
+                "triggers": {
+                    "trackPageview": {
+                        "on": "visible",
+                        "request": "pageview"
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
 </body>
 </html>

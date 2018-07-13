@@ -1,0 +1,48 @@
+.figure-content{
+  display: flex;
+margin: auto 10rem;
+justify-content: center;
+align-items: center;
+
+  &__figure{
+    width: 70rem;
+    position: relative;
+  }
+
+  &__img{
+    width: 100%;
+  
+  }
+
+  &__text-box{
+    & .heading-secondary{
+      margin-bottom: 4rem;
+    }
+  }
+  &__tagline{
+    background-color: $color-dark-grey;
+       
+        padding: 1rem 6rem 1rem 1rem;
+         clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+        position: absolute;
+        bottom: 3rem;
+        z-index: 20;
+        color: $color-light-grey;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+
+  }
+  &__values-list{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  &__values-item{
+    flex: 0 1 50%;
+    font-size: 3rem;
+  }
+}

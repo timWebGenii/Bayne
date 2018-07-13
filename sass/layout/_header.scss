@@ -21,7 +21,7 @@
        align-self: center;
        padding-left: 3rem;
         width: 55rem;
-        // height: 8rem;
+       
         clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 
        & .heading-primary--main{
@@ -32,12 +32,18 @@
    }
 
    &-team{
-      background-color: orangered;
-      height: 50rem;
+    background-image: url(../../img/team-banner.jpg);
+    background-size: cover;
+    height: 40rem;
 
       & .header__text-box{
           bottom: 0rem;
       }
+   }
+   &-contact{
+    background-image: url(../../img/contact-banner.jpg);
+    background-size: cover;
+    height: 60rem; 
    }
    &-portfolio{
        background-image: url(../../img/portfolio/dairy-dunkin-jimmy/DD-Winder-06.jpg);
@@ -48,6 +54,11 @@
     background-image: url(../../img/portfolio/winder-eye/eye-md-wide.jpg);
     background-size: cover;
     height: 50rem; 
+    margin-bottom: 0;
+
+    & .header__tagline{
+        width: 60rem;
+    }
    }
    &-card{
        width: 80vw;
